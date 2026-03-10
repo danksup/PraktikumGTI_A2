@@ -1,3 +1,7 @@
+# Hasil Output Tugas No. 1 dan 2
+<img width="629" height="473" alt="image" src="https://github.com/user-attachments/assets/b34207be-177e-47c2-adf1-fe776176243b" />
+
+
 # Perbedaan GL Primitives (Tugas No. 2)
 
 ## 1. GL_LINE_STRIP
