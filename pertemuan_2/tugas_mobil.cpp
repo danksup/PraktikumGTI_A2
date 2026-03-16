@@ -298,39 +298,39 @@ void mobil(void){
     glPopMatrix();
     
     //anjing
-        glPushMatrix();
-        glTranslatef(-0.85f, -0.3f, 0.0f);
-        
-        glBegin(GL_QUADS);
-        glColor3f(0.5f, 0.35f, 0.05f);
-        
-        //badan
-        glVertex3f(0.0f, 0.0f, 0.0f);
-        glVertex3f(0.12f, 0.0f, 0.0f);
-        glVertex3f(0.12f, 0.15f, 0.0f);
-        glVertex3f(0.0f, 0.15f, 0.0f);
-        
-        //kepala
-        glVertex3f(0.08f, 0.12f, 0.0f);
-        glVertex3f(0.18f, 0.12f, 0.0f);
-        glVertex3f(0.18f, 0.22f, 0.0f);
-        glVertex3f(0.08f, 0.22f, 0.0f);
-        
-        //ekor
-        glVertex3f(-0.04f, 0.08f, 0.0f);
-        glVertex3f(0.0f, 0.08f, 0.0f);
-        glVertex3f(0.0f, 0.12f, 0.0f);
-        glVertex3f(-0.04f, 0.12f, 0.0f);
+    glPushMatrix();
+    glTranslatef(-0.85f, -0.3f, 0.0f);
+    
+    glBegin(GL_QUADS);
+    glColor3f(0.5f, 0.35f, 0.05f);
+    
+    //badan
+    glVertex3f(0.0f, 0.0f, 0.0f);
+    glVertex3f(0.12f, 0.0f, 0.0f);
+    glVertex3f(0.12f, 0.15f, 0.0f);
+    glVertex3f(0.0f, 0.15f, 0.0f);
+    
+    //kepala
+    glVertex3f(0.08f, 0.12f, 0.0f);
+    glVertex3f(0.18f, 0.12f, 0.0f);
+    glVertex3f(0.18f, 0.22f, 0.0f);
+    glVertex3f(0.08f, 0.22f, 0.0f);
+    
+    //ekor
+    glVertex3f(-0.04f, 0.08f, 0.0f);
+    glVertex3f(0.0f, 0.08f, 0.0f);
+    glVertex3f(0.0f, 0.12f, 0.0f);
+    glVertex3f(-0.04f, 0.12f, 0.0f);
 
-        //mata
-        glColor3f(0.0f, 0.0f, 0.0f);
-        glVertex3f(0.14f, 0.18f, 0.0f);
-        glVertex3f(0.16f, 0.18f, 0.0f);
-        glVertex3f(0.16f, 0.20f, 0.0f);
-        glVertex3f(0.14f, 0.20f, 0.0f);
-        
-        glEnd();
-        glPopMatrix();
+    //mata
+    glColor3f(0.0f, 0.0f, 0.0f);
+    glVertex3f(0.14f, 0.18f, 0.0f);
+    glVertex3f(0.16f, 0.18f, 0.0f);
+    glVertex3f(0.16f, 0.20f, 0.0f);
+    glVertex3f(0.14f, 0.20f, 0.0f);
+    
+    glEnd();
+    glPopMatrix();
     
     glFlush();
     }
