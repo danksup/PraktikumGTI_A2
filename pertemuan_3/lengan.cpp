@@ -2,10 +2,7 @@
 #include <GLUT/glut.h>
 #include <cstdlib>
 
-// arm
 static int shoulder = 0, elbow = 0, wrist = 0;
-
-// fingers (1 angle each)
 static int finger1 = 0, finger2 = 0, finger3 = 0, finger4 = 0, finger5 = 0;
 
 void init(void) {
