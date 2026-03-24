@@ -9,7 +9,12 @@
 
 # Lengan 
 Cara Kerja:
-- 
+Terdapat dua variabel utama yaitu shoulder dan elbow yang menyimpan sudut rotasi masing-masing sendi.
+Pada fungsi display, penggambaran dilakukan sebagai berikut:
+- Lengan atas digambar dengan menggeser pivot ke ujung kiri (glTranslatef(-1,0,0)), merotasi sesuai sudut bahu (glRotatef(shoulder,...)), lalu menggeser ke tengah segmen dan menggambar kubus pipih dengan glScalef(2.0, 0.4, 1.0) dan glutWireCube(1.0).
+- Lengan Bawah digambar melanjutkan transformasi upper arm, sehingga secara otomatis mengikuti pergerakan bahu. Proses yang sama diterapkan: geser ke ujung upper arm, rotasi sesuai sudut siku, lalu gambar segmen.
+- glPushMatrix dan glPopMatrix digunakan untuk menyimpan dan memulihkan state matriks agar transformasi tiap segmen tidak saling mengganggu.
+- Kontrol keyboard mengubah nilai shoulder dan elbow sebesar ±5 derajat per penekanan, diikuti glutPostRedisplay untuk memicu redraw. Operator % 360 menjaga sudut dalam rentang 0-359 derajat.
 ## Tugas
 <img width="1024" height="632" alt="image" src="https://github.com/user-attachments/assets/ef708a80-05d0-445a-a4ea-e34220388f1c" />
 <img width="1021" height="629" alt="image" src="https://github.com/user-attachments/assets/d011b2d9-2cb8-4666-ab72-ae912d8630d2" />
